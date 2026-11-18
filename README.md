@@ -33,11 +33,12 @@ Busque também por `[PREENCHER]`, `[CONFIRMAR]` e `[FOTO DO PROF. ROMÁRIO AQUI]
 - [ ] Confirmar: novos módulos (e suas apostilas) sem custo extra para quem já comprou
 - [ ] Confirmar: banco com 120 questões (70 Tendências + 50 Teorias)
 
-## Publicar grátis com GitHub Pages
+## Publicação
 
-1. No repositório: **Settings → Pages**
-2. Em *Source*, escolha **Deploy from a branch**, branch `main`, pasta `/ (root)`
-3. Salve. Em 1 a 2 minutos a página fica no ar em `https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/`
+- **Endereço:** https://naoerremais.ballestech.com.br
+- **Hospedagem:** GitHub Pages (branch `main`, pasta raiz). Cada envio para `main` atualiza o site em 1 a 2 minutos.
+- **Domínio:** o arquivo `CNAME` aponta o Pages para o subdomínio. No DNS da Hostinger (`ballestech.com.br`) existe o registro `CNAME naoerremais → geffersonballes.github.io`.
+- **Trocar de domínio no futuro:** altere o arquivo `CNAME`, crie o registro equivalente no DNS do novo domínio e atualize o domínio em *Settings → Pages*.
 
 ## Recursos da página
 
