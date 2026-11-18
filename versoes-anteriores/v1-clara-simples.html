@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Método Não Erre Mais | Conhecimentos Específicos de Pedagogia para Concursos</title>
+<meta name="description" content="Pílulas de microaprendizagem + simulado com Inteligência Artificial que descobre onde você erra e treina você até acertar. Questões de bancas reais. R$ 47 ou 5x de R$ 9,40.">
+<meta property="og:title" content="Método Não Erre Mais — Pedagogia • Conhecimentos Específicos">
+<meta property="og:description" content="Você não precisa estudar mais. Precisa parar de errar o que mais cai.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#12A15E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#12A15E; --green-d:#0B7C47; --green-l:#E3F5EB;
+  --navy:#14213D; --navy-2:#1E2F55;
+  --yellow:#FFE14D; --red:#D9412F; --red-l:#FDE6E2;
+  --cream:#FBF6EE; --cream-2:#F3EADB; --line:#E8DCC8;
+  --text:#14213D; --muted:#5B6478; --white:#fff;
+  --f-title:'Poppins',system-ui,sans-serif; --f-text:'Inter',system-ui,sans-serif;
+  --r-sm:10px; --r:18px; --r-lg:28px;
+  --sh:0 10px 30px -12px rgba(20,33,61,.25); --sh-lg:0 30px 60px -20px rgba(20,33,61,.35);
+  --pad:72px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--f-text);color:var(--text);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 20px}
+section{padding:var(--pad) 0}
+h1,h2,h3{font-family:var(--f-title);line-height:1.1;letter-spacing:-.01em}
+h2{font-size:clamp(1.7rem,5.6vw,2.7rem);font-weight:900;text-transform:uppercase}
+.eyebrow{display:inline-block;font-family:var(--f-title);font-weight:700;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--green-d);margin-bottom:12px}
+.lead{font-size:1.08rem;color:var(--muted);max-width:640px}
+.center{text-align:center}.center .lead{margin-inline:auto}
+.hl{background:var(--yellow);color:var(--navy);padding:0 .18em;border-radius:6px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.hl-navy{background:var(--navy);color:var(--yellow);padding:0 .2em;border-radius:6px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+
+/* stamp */
+.stamp{display:inline-block;font-family:var(--f-title);font-weight:900;color:var(--red);background:#fff;border:3px solid var(--red);border-radius:10px;padding:6px 14px;transform:rotate(-3deg);box-shadow:4px 4px 0 rgba(217,65,47,.25);letter-spacing:.02em}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:16px 28px;border-radius:16px;background:var(--green);color:#fff;font-family:var(--f-title);font-weight:800;font-size:1.05rem;text-transform:uppercase;text-decoration:none;letter-spacing:.02em;box-shadow:0 8px 0 var(--green-d),0 18px 30px -10px rgba(18,161,94,.6);transition:transform .15s ease,box-shadow .15s ease,filter .15s;width:100%;max-width:440px;text-align:center}
+.btn:hover{filter:brightness(1.06);transform:translateY(-2px)}
+.btn:active{transform:translateY(5px);box-shadow:0 3px 0 var(--green-d)}
+.btn .arr{transition:transform .2s}.btn:hover .arr{transform:translateX(4px)}
+.price-note{font-size:.92rem;color:var(--muted);margin-top:14px}
+.price-note b{color:var(--text)}
+
+/* topbar */
+.topbar{background:var(--navy);color:#fff;font-size:.8rem;font-weight:600;text-align:center;padding:10px 12px;letter-spacing:.02em}
+.topbar span{color:var(--yellow)}
+
+/* HERO */
+.hero{padding:40px 0 72px;position:relative;overflow:hidden;background:
+  radial-gradient(600px 400px at 85% 10%,rgba(255,225,77,.35),transparent 60%),
+  radial-gradient(700px 500px at 0% 100%,rgba(18,161,94,.18),transparent 60%),
+  linear-gradient(var(--cream),var(--cream));}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:28px 28px;opacity:.45;mask-image:linear-gradient(#000,transparent 85%);pointer-events:none}
+.hero .wrap{position:relative;display:grid;gap:40px;align-items:center}
+.brand{display:flex;flex-direction:column;align-items:flex-start;gap:10px;margin-bottom:26px}
+.brand .tarja{font-family:var(--f-title);font-weight:700;font-size:.74rem;letter-spacing:.16em;background:var(--green);color:#fff;padding:6px 12px;border-radius:6px}
+.brand .name{font-family:var(--f-title);font-weight:900;font-size:1rem;letter-spacing:.06em}
+.hero h1{font-size:clamp(2.05rem,8.4vw,3.25rem);font-weight:900;text-transform:uppercase;margin-bottom:20px}
+.hero h1 .l2{display:block;margin-top:.12em}
+.hero .sub{font-size:clamp(1.08rem,3.6vw,1.3rem);color:var(--navy-2);max-width:560px;margin-bottom:22px;font-weight:500}
+.hero .sub strong{color:var(--green-d)}
+.checks{list-style:none;display:grid;gap:10px;margin-bottom:28px}
+.checks li{display:flex;gap:10px;align-items:center;font-weight:600}
+.checks li::before{content:"";flex:none;width:24px;height:24px;border-radius:50%;background:var(--green) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5 9-10'/%3E%3C/svg%3E") center/14px no-repeat}
+
+/* dashboard mock */
+.dash{background:#FCF8F1;border:1.5px solid var(--line);border-radius:var(--r-lg);padding:22px;box-shadow:var(--sh-lg);position:relative;max-width:520px;width:100%;justify-self:center}
+.dash .ai-badge{position:absolute;top:-16px;right:18px;background:var(--navy);color:var(--yellow);font-family:var(--f-title);font-weight:800;font-size:.75rem;padding:7px 12px;border-radius:999px;letter-spacing:.06em;box-shadow:var(--sh)}
+.dash h3{font-size:1.1rem;font-weight:800;margin-bottom:2px}
+.dash .meta{font-size:.82rem;color:var(--muted);margin-bottom:18px}
+.row{display:grid;grid-template-columns:1fr 1.2fr auto;gap:10px;align-items:center;margin-bottom:12px;font-size:.86rem;font-weight:600}
+.bar{height:12px;background:var(--cream-2);border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;border-radius:99px;transition:width 1.2s cubic-bezier(.2,.8,.2,1)}
+.tag{font-size:.7rem;font-weight:700;padding:4px 8px;border-radius:8px;white-space:nowrap}
+.t-red{background:var(--red-l);color:var(--red)}.t-yel{background:#FFF6C2;color:#8A6D00}.t-grn{background:var(--green-l);color:var(--green-d)}.t-gry{background:var(--cream-2);color:var(--muted)}
+.next{margin-top:16px;display:flex;gap:10px;align-items:center;background:var(--navy);color:#fff;border-radius:14px;padding:12px 14px;font-size:.86rem;opacity:0;transform:translateY(8px);transition:all .6s ease 1.2s}
+.next b{color:var(--yellow)}
+.dash.on .next{opacity:1;transform:none}
+.next .pulse{flex:none;width:10px;height:10px;border-radius:50%;background:var(--yellow);box-shadow:0 0 0 0 rgba(255,225,77,.7);animation:pulse 1.8s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(255,225,77,0)}100%{box-shadow:0 0 0 0 rgba(255,225,77,0)}}
+.dash .cap{font-size:.74rem;color:var(--muted);margin-top:12px;text-align:center}
+.tag{transition:background .4s,color .4s}
+.float{position:absolute;z-index:2;font-size:.74rem;font-weight:700;background:#fff;border:1.5px solid var(--line);border-radius:99px;padding:6px 12px;box-shadow:var(--sh);white-space:nowrap;animation:bob 4s ease-in-out infinite}
+.f1{left:18px;top:-16px;color:var(--green-d)}
+.f2{right:-10px;bottom:-16px;color:var(--navy);animation-delay:-2s}
+@keyframes bob{50%{transform:translateY(-8px)}}
+@media (max-width:520px){.f2{display:none}}
+.progress{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--green),var(--yellow));z-index:60}
+/* QUIZ */
+.quiz-sec{background:linear-gradient(180deg,var(--cream),#fff)}
+.quiz{max-width:620px;margin:32px auto 0;background:#fff;border:2px solid var(--navy);border-radius:var(--r-lg);padding:22px;box-shadow:8px 8px 0 var(--navy)}
+.q-top{display:flex;justify-content:space-between;gap:10px;font-size:.8rem;font-weight:700;color:var(--muted);margin-bottom:10px}
+.q-topic{background:var(--yellow);color:var(--navy);padding:2px 10px;border-radius:99px;font-size:.7rem;text-transform:uppercase;letter-spacing:.06em}
+.q-prog{height:8px;background:var(--cream-2);border-radius:99px;overflow:hidden;margin-bottom:18px}
+.q-prog i{display:block;height:100%;width:0;background:var(--green);transition:width .5s ease}
+.q-text{font-family:var(--f-title);font-weight:800;font-size:1.12rem;line-height:1.35;margin-bottom:16px}
+.opts{display:grid;gap:10px}
+.opt{all:unset;box-sizing:border-box;cursor:pointer;display:flex;gap:12px;align-items:center;min-height:52px;padding:12px 14px;border:2px solid var(--line);border-radius:14px;font-weight:600;font-size:.95rem;background:var(--cream);transition:border-color .2s,background .2s,transform .15s}
+.opt:hover,.opt:focus-visible{border-color:var(--navy);transform:translateY(-2px)}
+.opt .l{flex:none;width:30px;height:30px;border-radius:9px;background:#fff;border:2px solid var(--line);display:grid;place-items:center;font-family:var(--f-title);font-weight:800;font-size:.85rem}
+.opt.ok{border-color:var(--green);background:var(--green-l)}.opt.ok .l{background:var(--green);border-color:var(--green);color:#fff}
+.opt.no{border-color:var(--red);background:var(--red-l);animation:shake .35s}.opt.no .l{background:var(--red);border-color:var(--red);color:#fff}
+.opt[disabled]{cursor:default;transform:none}
+@keyframes shake{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.fb{margin-top:14px;border-radius:14px;padding:14px;font-size:.93rem;animation:pop .35s ease}
+.fb.ok{background:var(--green-l);color:#0A5A34}.fb.no{background:var(--red-l);color:#8A2418}
+.fb b{display:block;font-family:var(--f-title);font-size:1rem;margin-bottom:4px}
+@keyframes pop{from{opacity:0;transform:translateY(8px)}}
+.q-next{margin-top:14px;width:100%;max-width:none;min-height:52px;font-size:.95rem}
+.res h3{font-family:var(--f-title);font-size:1.3rem;font-weight:900;text-transform:uppercase;margin-bottom:4px}
+.res .score{font-family:var(--f-title);font-size:3rem;font-weight:900;color:var(--green-d);line-height:1}
+.res .row{grid-template-columns:1fr 1fr auto}
+.res .ai{margin:16px 0;background:var(--navy);color:#fff;border-radius:14px;padding:14px;font-size:.92rem}
+.res .ai b{color:var(--yellow)}
+.again{all:unset;cursor:pointer;display:block;margin:12px auto 0;font-size:.85rem;font-weight:700;color:var(--muted);text-decoration:underline}
+/* trap flip */
+.trap{cursor:pointer;transition:transform .2s,border-color .2s}
+.trap:hover{transform:translateY(-3px);border-color:rgba(255,225,77,.5)}
+.trap .hint{display:inline-block;font-size:.8rem;font-weight:700;color:var(--yellow);animation:bob 2.4s ease-in-out infinite}
+.trap .a{display:none}
+.trap.open .a{display:block;animation:pop .35s ease}
+.trap.open .hint{display:none}
+
+/* PAIN */
+.pain{background:var(--navy);color:#fff}
+.pain h2{color:#fff}
+.pain .lead{color:#C9D1E3}
+.pain-grid{display:grid;gap:14px;margin-top:36px}
+.pain-card{background:var(--navy-2);border:1px solid rgba(255,255,255,.08);border-radius:var(--r);padding:20px 20px 20px 56px;position:relative;font-weight:500}
+.pain-card::before{content:"✕";position:absolute;left:18px;top:18px;width:26px;height:26px;border-radius:50%;background:var(--red);display:grid;place-items:center;font-size:.8rem;font-weight:900}
+.pain-punch{margin-top:36px;font-family:var(--f-title);font-weight:800;font-size:clamp(1.25rem,4.4vw,1.75rem);text-transform:uppercase;line-height:1.25}
+.pain-punch .hl{color:var(--navy)}
+
+/* COMPARE */
+.compare{display:grid;gap:18px;margin-top:40px}
+.col{border-radius:var(--r-lg);padding:26px;border:1.5px solid var(--line);background:#fff}
+.col h3{font-size:1.05rem;text-transform:uppercase;font-weight:800;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.col ul{list-style:none;display:grid;gap:12px}
+.col li{display:flex;gap:10px;font-size:.98rem}
+.col.bad{background:#FBF1EF;border-color:#F0D3CD}
+.col.bad li::before{content:"✕";color:var(--red);font-weight:900}
+.col.good{background:var(--green);color:#fff;border-color:var(--green);box-shadow:var(--sh-lg)}
+.col.good li::before{content:"✓";color:var(--yellow);font-weight:900}
+.col.good h3 .stamp{font-size:.8rem;padding:3px 10px;border-width:2px}
+
+/* LOOP */
+.steps{display:grid;gap:16px;margin-top:44px;counter-reset:s;position:relative}
+.step{background:#fff;border:1.5px solid var(--line);border-radius:var(--r);padding:22px 22px 22px 84px;position:relative;box-shadow:0 2px 0 var(--line)}
+.step::before{counter-increment:s;content:counter(s);position:absolute;left:20px;top:20px;width:46px;height:46px;border-radius:14px;background:var(--navy);color:var(--yellow);font-family:var(--f-title);font-weight:900;font-size:1.3rem;display:grid;place-items:center}
+.step h3{font-size:1.08rem;font-weight:800;margin-bottom:4px}
+.step p{color:var(--muted);font-size:.96rem}
+.step.ai{border-color:var(--green);background:var(--green-l)}
+.step.ai::before{background:var(--green);color:#fff}
+.loop-note{margin-top:22px;display:flex;align-items:center;gap:12px;justify-content:center;font-family:var(--f-title);font-weight:800;text-transform:uppercase;color:var(--green-d);font-size:.95rem;text-align:center}
+.loop-note svg{flex:none;animation:spin 6s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* DEMO */
+.demo{background:linear-gradient(180deg,var(--cream) 0,var(--cream-2) 100%)}
+.video{margin-top:36px;aspect-ratio:16/9;border-radius:var(--r-lg);background:var(--navy);position:relative;overflow:hidden;box-shadow:var(--sh-lg);display:grid;place-items:center;color:#fff;text-align:center;padding:20px}
+.video .play{width:76px;height:76px;border-radius:50%;background:var(--green);display:grid;place-items:center;margin:0 auto 14px;box-shadow:0 0 0 12px rgba(18,161,94,.25)}
+.video small{color:#C9D1E3;display:block;max-width:420px;margin:0 auto}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.feats{display:grid;gap:14px;margin-top:28px}
+.feat{display:flex;gap:14px;align-items:flex-start;background:#fff;border-radius:var(--r);padding:18px;border:1.5px solid var(--line)}
+.feat .ic{flex:none;width:42px;height:42px;border-radius:12px;background:var(--yellow);display:grid;place-items:center;font-size:1.2rem}
+.feat h3{font-size:1rem;font-weight:800;margin-bottom:2px}
+.feat p{font-size:.92rem;color:var(--muted)}
+
+/* MICRO */
+.micro .wrap{display:grid;gap:36px;align-items:center}
+.phone{width:260px;max-width:80%;margin:0 auto;aspect-ratio:9/18.5;border-radius:38px;background:var(--navy);padding:12px;box-shadow:var(--sh-lg);position:relative}
+.phone .screen{width:100%;height:100%;border-radius:28px;background:var(--cream);overflow:hidden;padding:16px 12px;display:flex;flex-direction:column;gap:10px}
+.phone .p-head{background:var(--green);border-radius:14px;padding:12px;color:#fff;font-family:var(--f-title);font-weight:800;font-size:.8rem}
+.phone .p-head .stamp{font-size:.62rem;padding:2px 7px;border-width:2px;margin-bottom:6px}
+.pill{background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:10px;font-size:.72rem;font-weight:600;display:flex;justify-content:space-between;align-items:center}
+.pill span{font-size:.64rem;color:var(--muted);font-weight:600}
+.pill.done{border-color:var(--green)}
+.pill.done span{color:var(--green-d)}
+.big-num{display:flex;gap:18px;flex-wrap:wrap;margin-top:24px}
+.big-num div{background:#fff;border:1.5px solid var(--line);border-radius:var(--r);padding:16px 18px;flex:1;min-width:140px}
+.big-num b{font-family:var(--f-title);font-size:1.8rem;font-weight:900;color:var(--green-d);display:block;line-height:1}
+.big-num span{font-size:.86rem;color:var(--muted)}
+
+/* MODULES */
+.modules{display:grid;gap:16px;margin-top:40px}
+.mod{background:#fff;border-radius:var(--r-lg);border:1.5px solid var(--line);padding:24px;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s}
+.mod:hover{transform:translateY(-4px);box-shadow:var(--sh)}
+.mod .n{font-family:var(--f-title);font-weight:900;font-size:.75rem;letter-spacing:.14em;color:var(--green-d)}
+.mod h3{font-size:1.25rem;font-weight:900;text-transform:uppercase;margin:6px 0 10px}
+.mod p{color:var(--muted);font-size:.95rem}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.chips span{font-size:.76rem;font-weight:600;background:var(--cream);border:1px solid var(--line);padding:4px 10px;border-radius:99px}
+.mod.soon{background:repeating-linear-gradient(-45deg,var(--cream),var(--cream) 10px,var(--cream-2) 10px,var(--cream-2) 20px);border-style:dashed;display:grid;place-items:center;text-align:center;min-height:150px}
+.mod.soon h3{font-size:1.05rem}
+
+.mod.m1{border-top:6px solid #FE772B}.mod.m1 .n{color:#C9531A}
+.mod.m2{border-top:6px solid var(--green)}
+.eps{list-style:none;counter-reset:e;margin-top:16px;display:grid;gap:2px}
+.eps li{counter-increment:e;display:flex;gap:10px;align-items:baseline;font-size:.92rem;font-weight:500;padding:8px 0;border-bottom:1px dashed var(--line)}
+.eps li::before{content:"Ep" counter(e);flex:none;font-family:var(--f-title);font-weight:800;font-size:.72rem;color:#fff;background:var(--navy);border-radius:6px;padding:2px 6px}
+.eps li span{margin-left:auto;flex:none;font-size:.78rem;color:var(--muted);font-variant-numeric:tabular-nums}
+/* TRAPS */
+.traps{background:var(--navy);color:#fff}
+.traps h2{color:#fff}.traps .lead{color:#C9D1E3}
+.trap-grid{display:grid;gap:16px;margin-top:36px}
+.trap{background:var(--navy-2);border:1px solid rgba(255,255,255,.08);border-radius:var(--r-lg);padding:22px}
+.trap-tag{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--navy);background:var(--yellow);padding:3px 10px;border-radius:99px;margin-bottom:12px}
+.trap .q{font-style:italic;color:#E6EAF3;padding-left:14px;border-left:3px solid var(--red);margin-bottom:12px}
+.trap .a{background:rgba(18,161,94,.18);border-radius:12px;padding:12px 14px;font-size:.95rem}
+.trap .a b{color:#7BE0A9}
+@media (min-width:760px){.trap-grid{grid-template-columns:1fr 1fr}}
+/* FOR WHO */
+.who{display:grid;gap:16px;margin-top:40px}
+.who-card{background:#fff;border-radius:var(--r-lg);padding:24px;border:1.5px solid var(--line);border-top:6px solid var(--green)}
+.who-card:nth-child(2){border-top-color:var(--yellow)}
+.who-card:nth-child(3){border-top-color:var(--navy)}
+.who-card h3{font-size:1.08rem;font-weight:800;margin-bottom:6px}
+.who-card p{color:var(--muted);font-size:.95rem}
+
+/* TEACHER */
+.teacher .wrap{display:grid;gap:32px;align-items:center}
+.t-photo{aspect-ratio:4/5;max-width:340px;width:100%;margin:0 auto;border-radius:var(--r-lg);background:var(--cream-2);border:2px dashed var(--line);display:grid;place-items:center;text-align:center;color:var(--muted);font-weight:600;padding:20px;position:relative}
+.t-photo .stamp{position:absolute;bottom:-14px;right:-6px;font-size:.85rem}
+.cred{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.cred span{font-size:.8rem;font-weight:600;background:var(--green-l);color:var(--green-d);padding:6px 12px;border-radius:99px}
+.quote{margin-top:22px;border-left:5px solid var(--yellow);background:var(--cream);border-radius:0 var(--r) var(--r) 0;padding:18px 20px;font-family:var(--f-title);font-weight:700;font-size:1.05rem;line-height:1.4;color:var(--navy)}
+.quote cite{display:block;margin-top:8px;font-family:var(--f-text);font-style:normal;font-weight:600;font-size:.85rem;color:var(--muted)}
+.ph{background:#FFF6C2;border:1px dashed #C9A800;color:#6B5500;padding:1px 6px;border-radius:6px;font-size:.9em;font-weight:600}
+
+/* OFFER */
+.offer{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.offer::before{content:"";position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(18,161,94,.45),transparent 65%);top:-250px;left:50%;transform:translateX(-50%)}
+.offer .wrap{position:relative}
+.offer h2{color:#fff}
+.card-offer{background:#fff;color:var(--text);border-radius:var(--r-lg);padding:30px 22px;max-width:520px;margin:36px auto 0;box-shadow:0 40px 80px -30px rgba(0,0,0,.6);text-align:center;position:relative}
+.card-offer .stamp{position:absolute;top:-20px;left:50%;transform:translateX(-50%) rotate(-3deg);white-space:nowrap}
+.card-offer ul{list-style:none;text-align:left;display:grid;gap:10px;margin:18px 0 22px}
+.card-offer li{display:flex;gap:10px;font-size:.95rem;font-weight:500}
+.card-offer li::before{content:"✓";flex:none;width:22px;height:22px;border-radius:50%;background:var(--green-l);color:var(--green-d);display:grid;place-items:center;font-weight:900;font-size:.8rem}
+.price{font-family:var(--f-title);margin:6px 0 4px}
+.price .small{display:block;font-size:.95rem;font-weight:700;color:var(--muted)}
+.price .big{font-size:clamp(2.6rem,12vw,3.6rem);font-weight:900;color:var(--navy);line-height:1}
+.price .big sup{font-size:.4em;vertical-align:.95em;margin-right:4px}
+.price .or{display:block;font-size:1rem;font-weight:700;color:var(--green-d);margin-top:6px}
+.secure{display:flex;gap:8px;justify-content:center;align-items:center;font-size:.8rem;color:var(--muted);margin-top:14px}
+.guarantee{display:grid;gap:18px;align-items:center;max-width:720px;margin:40px auto 0;background:var(--navy-2);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-lg);padding:24px}
+.seal{width:110px;height:110px;margin:0 auto;border-radius:50%;background:var(--yellow);color:var(--navy);display:grid;place-items:center;text-align:center;font-family:var(--f-title);font-weight:900;line-height:1;box-shadow:0 0 0 8px rgba(255,225,77,.2)}
+.seal b{font-size:2.4rem;display:block}
+.seal span{font-size:.7rem;letter-spacing:.1em}
+.guarantee h3{font-size:1.2rem;font-weight:800;margin-bottom:6px}
+.guarantee p{color:#C9D1E3;font-size:.95rem}
+
+/* FAQ */
+.faq{max-width:760px;margin:36px auto 0;display:grid;gap:10px}
+details{background:#fff;border:1.5px solid var(--line);border-radius:var(--r);padding:0 20px}
+summary{cursor:pointer;list-style:none;padding:18px 0;font-weight:700;display:flex;justify-content:space-between;gap:12px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--f-title);font-size:1.5rem;font-weight:700;color:var(--green);transition:transform .2s;flex:none}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 0 18px;color:var(--muted)}
+
+/* FINAL */
+.final{text-align:center;background:var(--green);color:#fff}
+.final h2{color:#fff}
+.final .btn{background:var(--yellow);color:var(--navy);box-shadow:0 8px 0 #C9A800,0 18px 30px -10px rgba(0,0,0,.35)}
+.final .price-note{color:#E3F5EB}.final .price-note b{color:#fff}
+footer{background:var(--navy);color:#9AA6C2;font-size:.8rem;text-align:center;padding:28px 20px 100px}
+
+/* sticky mobile cta */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:10px 16px;display:flex;align-items:center;gap:12px;transform:translateY(110%);transition:transform .35s ease}
+.sticky.show{transform:none}
+.sticky .p{font-family:var(--f-title);font-weight:900;line-height:1.1;font-size:1.15rem;color:var(--navy);white-space:nowrap}
+.sticky .p small{display:block;font-size:.7rem;font-weight:700;color:var(--muted)}
+.sticky .btn{min-height:50px;padding:10px 16px;font-size:.88rem;box-shadow:0 5px 0 var(--green-d)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease}
+.rv.in{opacity:1;transform:none}
+
+@media (min-width:760px){
+  :root{--pad:104px}
+  .hero{padding:56px 0 100px}
+  .hero .wrap{grid-template-columns:1.15fr 1fr}
+  .pain-grid{grid-template-columns:1fr 1fr}
+  .compare{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .steps .step:last-child{grid-column:1/-1}
+  .feats{grid-template-columns:repeat(3,1fr)}
+  .micro .wrap{grid-template-columns:1fr 1fr}
+  .modules{grid-template-columns:1fr 1fr}
+  .who{grid-template-columns:repeat(3,1fr)}
+  .teacher .wrap{grid-template-columns:.8fr 1.2fr}
+  .guarantee{grid-template-columns:auto 1fr;text-align:left}
+  .card-offer{padding:40px 36px}
+  .sticky{display:none}
+  footer{padding-bottom:28px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="topbar">🤖 Simulado com <span>Inteligência Artificial</span> • Questões de bancas reais • Garantia de 7 dias</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="brand rv">
+        <span class="stamp">NÃO ERRE MAIS!</span>
+        <span class="tarja">PEDAGOGIA • CONHECIMENTOS ESPECÍFICOS</span>
+      </div>
+      <h1 class="rv">Você não precisa estudar mais.<span class="l2"><span class="hl">Precisa parar de errar</span> o que mais cai.</span></h1>
+      <p class="sub rv">O <strong>simulado com Inteligência Artificial</strong> que descobre onde você erra e treina você até acertar.</p>
+      <ul class="checks rv">
+        <li>Questões de bancas reais de concursos de Pedagogia</li>
+        <li>Pílulas de cerca de 2 minutos: módulo completo em 10 a 15 min</li>
+        <li>As pegadinhas que as bancas mais usam, desmontadas</li>
+        <li>Estude pelo celular, no seu ritmo</li>
+      </ul>
+      <div class="rv">
+        <a class="btn cta" href="#oferta">Quero parar de errar <span class="arr">→</span></a>
+        <p class="price-note">Por apenas <b>R$ 47</b> ou <b>5x de R$ 9,40</b> • Acesso imediato pela Hotmart</p>
+      </div>
+    </div>
+
+    <div class="dash rv" id="dash" aria-label="Exemplo do painel de evolução do aluno">
+      <span class="ai-badge">⚡ ANÁLISE POR IA</span>
+      <h3>📈 Sua evolução</h3>
+      <p class="meta">Teorias da Aprendizagem • 1 simulado feito</p>
+      <span class="float f1" aria-hidden="true">✓ Piaget dominado</span>
+      <span class="float f2" aria-hidden="true">🎯 Questão de banca real</span>
+      <div class="row"><span>Henri Wallon</span><div class="bar"><i id="wBar" data-w="33" style="background:var(--red)"></i></div><span class="tag t-red" id="wTag">⚠ Reforçar</span></div>
+      <div class="row"><span>Lev Vygotsky</span><div class="bar"><i data-w="50" style="background:#F2C200"></i></div><span class="tag t-yel">Em evolução</span></div>
+      <div class="row"><span>Jean Piaget</span><div class="bar"><i data-w="100" style="background:var(--green)"></i></div><span class="tag t-grn">✓ Dominado</span></div>
+      <div class="row"><span>David Ausubel</span><div class="bar"><i data-w="100" style="background:var(--green)"></i></div><span class="tag t-grn">✓ Dominado</span></div>
+      <div class="row"><span>Ciclos de Vida</span><div class="bar"><i data-w="100" style="background:var(--green)"></i></div><span class="tag t-grn">✓ Dominado</span></div>
+      <div class="next"><span class="pulse"></span><span id="nextTxt">Próximo simulado gerado com foco em <b>Henri Wallon</b> e <b>Vygotsky</b></span></div>
+      <p class="cap">Exemplo do painel real da plataforma</p>
+    </div>
+  </div>
+</header>
+
+<!-- DOR -->
+<section class="pain">
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--yellow)">Seja sincera(o)</span>
+    <h2 class="rv">Você já passou por isso na prova?</h2>
+    <div class="pain-grid">
+      <div class="pain-card rv">Estudou Piaget, Vygotsky e Wallon… e na hora da questão <b>confundiu quem disse o quê</b>.</div>
+      <div class="pain-card rv">Leu o mesmo PDF de 80 páginas três vezes e <b>continuou errando as mesmas questões</b>.</div>
+      <div class="pain-card rv">Resolveu centenas de questões, mas <b>nunca soube exatamente onde está o seu ponto fraco</b>.</div>
+      <div class="pain-card rv">Sente que estuda muito, mas a nota de <b>conhecimentos específicos não sobe</b>.</div>
+    </div>
+    <p class="pain-punch rv">O problema não é falta de estudo.<br>É estudar <span class="hl">tudo igual</span>, quando você erra coisas diferentes.</p>
+  </div>
+</section>
+
+<!-- COMPARAÇÃO -->
+<section>
+  <div class="wrap center">
+    <span class="eyebrow">A virada</span>
+    <h2 class="rv">Não é só mais um <span class="hl">banco de questões</span></h2>
+    <p class="lead rv" style="margin-top:14px">Banco de questão comum te faz responder e depois ir caçar a resposta. O Método Não Erre Mais <b>te dá a resposta, te mostra onde melhorar e monta o próximo treino para você.</b></p>
+    <div class="compare" style="text-align:left">
+      <div class="col bad rv">
+        <h3>Banco de questões comum</h3>
+        <ul>
+          <li>Você responde e fica sem saber o porquê do erro</li>
+          <li>Precisa procurar a explicação em outro lugar</li>
+          <li>Questões aleatórias, iguais para todo mundo</li>
+          <li>Você não sabe qual assunto está fraco</li>
+          <li>Horas de aula longa antes de praticar</li>
+        </ul>
+      </div>
+      <div class="col good rv">
+        <h3>Método <span class="stamp">NÃO ERRE MAIS!</span></h3>
+        <ul>
+          <li>Resposta e explicação na hora, a cada questão</li>
+          <li>Diagnóstico com métricas por autor e por tema</li>
+          <li>A IA monta um novo simulado só com o que você errou</li>
+          <li>Trilha de aprendizagem personalizada para você</li>
+          <li>Pílulas de 10 a 15 min e você já está pronto para treinar</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MINI SIMULADO -->
+<section class="quiz-sec" id="teste">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Experimente agora • grátis</span>
+      <h2 class="rv">Você cairia nessas <span class="hl">pegadinhas?</span></h2>
+      <p class="lead rv" style="margin-top:14px">Responda 5 questões rápidas e veja como o Método Não Erre Mais te dá a resposta na hora e mostra onde você precisa melhorar.</p>
+    </div>
+    <div class="quiz rv" id="quiz" aria-live="polite">
+      <div class="q-top"><span id="qCount">Questão 1 de 5</span><span class="q-topic" id="qTopic"></span></div>
+      <div class="q-prog"><i id="qProg"></i></div>
+      <div id="qBody"></div>
+    </div>
+    <p class="center" style="font-size:.8rem;color:var(--muted);margin-top:12px">Demonstração com questões elaboradas a partir das aulas. No curso, o simulado usa questões de bancas reais.</p>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Como funciona</span>
+      <h2 class="rv">O simulado que <span class="hl-navy">treina você até acertar</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step rv"><h3>Assista à pílula do módulo</h3><p>Microaprendizagem visual: cada módulo tem de 10 a 15 minutos. Direto ao que mais cai.</p></div>
+      <div class="step rv"><h3>Faça o simulado</h3><p>Questões de bancas reais, com resposta comentada na hora. Nada de caçar gabarito.</p></div>
+      <div class="step ai rv"><h3>A IA mostra onde você erra</h3><p>Métricas por assunto: o que está dominado, o que está em evolução e o que precisa reforçar.</p></div>
+      <div class="step ai rv"><h3>Novo simulado, focado na sua dificuldade</h3><p>A Inteligência Artificial monta o próximo treino com o que você mais precisa.</p></div>
+      <div class="step rv"><h3>Repita até quando quiser</h3><p>Surgiu outra dificuldade? A IA aponta e personaliza de novo. E o modo livre deixa você treinar do jeito que vai cair na prova.</p></div>
+    </div>
+    <p class="loop-note rv">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg>
+      Errou? A IA treina você naquilo até acertar.
+    </p>
+  </div>
+</section>
+
+<!-- DEMO -->
+<section class="demo">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Veja funcionando</span>
+      <h2 class="rv">Assista à plataforma <span class="hl">na prática</span></h2>
+      <p class="lead rv" style="margin-top:14px">Eu mostro na tela: o simulado, o feedback de cada questão, as métricas e a IA montando o próximo treino.</p>
+    </div>
+    <!-- TROQUE: cole o link do YouTube em VIDEO_ID no script no fim da página -->
+    <div class="video rv" id="video">
+      <div>
+        <div class="play"><svg width="30" height="30" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div>
+        <b>[VÍDEO TUTORIAL AQUI]</b>
+        <small>Você na câmera + gravação de tela mostrando o simulado, o feedback e as métricas.</small>
+      </div>
+    </div>
+    <div class="feats">
+      <div class="feat rv"><div class="ic">💬</div><div><h3>Feedback imediato</h3><p>Errou? Você vê a resposta certa e entende o porquê na mesma hora.</p></div></div>
+      <div class="feat rv"><div class="ic">📊</div><div><h3>Métricas por assunto</h3><p>Barra de aproveitamento por autor e tema, com meta de 70%.</p></div></div>
+      <div class="feat rv"><div class="ic">🎯</div><div><h3>Prioridade inteligente</h3><p>O sorteio prioriza questões que você ainda não viu e o que você precisa reforçar.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MICROLEARNING -->
+<section class="micro">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">O método</span>
+      <h2 class="rv">Microlearning: <span class="hl">pouco tempo,</span> muito acerto</h2>
+      <p class="lead rv" style="margin-top:16px">Pílulas visuais de microaprendizagem para você dominar o que mais cai e não errar mais as questões específicas na prova. Sem aula de 3 horas. Sem PDF interminável.</p>
+      <div class="big-num rv">
+        <div><b><span data-count="13">0</span></b><span>pílulas em vídeo</span></div>
+        <div><b><span data-count="26">0</span></b><span>pegadinhas desmontadas</span></div>
+        <div><b>~<span data-count="2">0</span> min</b><span>por pílula, no celular</span></div>
+      </div>
+    </div>
+    <div class="phone rv" aria-hidden="true">
+      <div class="screen">
+        <div class="p-head"><span class="stamp">NÃO ERRE MAIS!</span><br>Simulado: Teorias da Aprendizagem</div>
+        <div class="pill done">Piaget <span>✓ Dominado</span></div>
+        <div class="pill done">Ausubel <span>✓ Dominado</span></div>
+        <div class="pill">Vygotsky <span>Em evolução</span></div>
+        <div class="pill" style="border-color:var(--red)">Wallon <span style="color:var(--red)">⚠ Reforçar</span></div>
+        <div class="pill" style="background:var(--green);color:#fff;border-color:var(--green);justify-content:center">📝 Fazer simulado</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PEGADINHAS -->
+<section class="traps">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow" style="color:var(--yellow)">Alerta de prova</span>
+      <h2 class="rv"><span class="hl">26 pegadinhas</span> das bancas desmontadas</h2>
+      <p class="lead rv" style="margin-top:14px">Todo episódio termina com as 2 pegadinhas clássicas daquele tema — e um jeito fácil de nunca mais cair nelas. Olha só algumas:</p>
+    </div>
+    <div class="trap-grid">
+      <div class="trap rv" role="button" tabindex="0" aria-expanded="false"><span class="trap-tag">Tendências Pedagógicas</span><p class="q">“A banca vai tentar te confundir colocando ‘Renovada Progressivista’ dentro das Progressistas.”</p><span class="hint">👆 Toque para ver o macete</span><p class="a"><b>Não caia:</b> Progressiv<u>i</u>sta, com “i” no meio, é Escola Nova — é Liberal!</p></div>
+      <div class="trap rv" role="button" tabindex="0" aria-expanded="false"><span class="trap-tag">Tendências Pedagógicas</span><p class="q">“Confundir Libertadora com Libertária! A banca troca os nomes o tempo todo!”</p><span class="hint">👆 Toque para ver o macete</span><p class="a"><b>Grave assim:</b> Liber-ta-DORA é Paulo Freire, Temas Geradores e diálogo. Libertária é autogestão e assembleias.</p></div>
+      <div class="trap rv" role="button" tabindex="0" aria-expanded="false"><span class="trap-tag">Teorias da Aprendizagem</span><p class="q">“Quem vem primeiro, aprendizagem ou desenvolvimento?”</p><span class="hint">👆 Toque para ver o macete</span><p class="a"><b>Piaget:</b> o desenvolvimento vem antes. <b>Vygotsky:</b> a aprendizagem puxa o desenvolvimento — o bom ensino se adianta a ele.</p></div>
+      <div class="trap rv" role="button" tabindex="0" aria-expanded="false"><span class="trap-tag">Tendências Pedagógicas</span><p class="q">Prática Social Inicial, Problematização, Instrumentalização, Catarse e Prática Social Final.</p><span class="hint">👆 Toque para ver o macete</span><p class="a"><b>Viu os 5 passos?</b> “Marque Histórico-Crítica de olhos fechados!”</p></div>
+    </div>
+    <p class="center rv" style="margin-top:28px;font-family:var(--f-title);font-weight:800;text-transform:uppercase;color:var(--yellow)">Liberal adapta e conserva. Progressista critica e transforma.</p>
+  </div>
+</section>
+
+<!-- MÓDULOS -->
+<section style="background:#fff">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Conteúdo</span>
+      <h2 class="rv">O que <span class="hl">mais cai</span> em conhecimentos específicos</h2>
+      <p class="lead rv" style="margin-top:14px">13 episódios de cerca de 2 minutos cada. Cada módulo fecha em 10 a 15 minutos — e você já está pronto para o simulado com IA.</p>
+    </div>
+    <div class="modules">
+      <div class="mod m1 rv"><span class="n">MÓDULO 01 • 8 EPISÓDIOS • 12 MIN</span><h3>Tendências Pedagógicas</h3><p>O mapa de Libâneo para nunca mais confundir Liberais e Progressistas — nem Progressivista com Progressista.</p>
+        <ol class="eps">
+          <li>Mapa Geral: Liberais × Progressistas<span>1:26</span></li>
+          <li>Liberal Tradicional<span>1:36</span></li>
+          <li>Renovada Progressivista (Escola Nova)<span>1:32</span></li>
+          <li>Renovada Não-Diretiva (Carl Rogers)<span>1:36</span></li>
+          <li>Liberal Tecnicista (Skinner)<span>1:33</span></li>
+          <li>Progressista Libertadora (Paulo Freire)<span>1:30</span></li>
+          <li>Progressista Libertária<span>1:35</span></li>
+          <li>Crítico-Social dos Conteúdos e Histórico-Crítica (Saviani)<span>1:36</span></li>
+        </ol>
+      </div>
+      <div class="mod m2 rv"><span class="n">MÓDULO 02 • 5 EPISÓDIOS • 10 MIN</span><h3>Teorias da Aprendizagem</h3><p>Os autores que mais caem, lado a lado, para você saber exatamente quem disse o quê.</p>
+        <ol class="eps">
+          <li>Jean Piaget: Epistemologia Genética<span>2:04</span></li>
+          <li>Lev Vygotsky: Teoria Histórico-Cultural e ZDP<span>2:08</span></li>
+          <li>Henri Wallon: Psicogênese da Pessoa Completa<span>2:07</span></li>
+          <li>David Ausubel: Aprendizagem Significativa<span>1:52</span></li>
+          <li>Ciclos de Vida Humana<span>1:51</span></li>
+        </ol>
+      </div>
+      <div class="mod soon rv" style="grid-column:1/-1"><div><span class="n">EM PRODUÇÃO</span><h3>Próximos módulos</h3><div class="chips" style="justify-content:center"><span>Avaliação da Aprendizagem</span><span>Currículo e Didática</span><span>e mais…</span></div><p style="color:var(--muted);font-size:.92rem;margin-top:10px">Quem entra agora recebe os próximos módulos sem pagar nada a mais. <span class="ph">[CONFIRMAR]</span></p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PARA QUEM -->
+<section>
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Para quem é</span>
+      <h2 class="rv">Feito para quem vai prestar <span class="hl">concurso de professor</span></h2>
+    </div>
+    <div class="who">
+      <div class="who-card rv"><h3>🎓 Pedagoga(o) recém-formada(o)</h3><p>Vai fazer o primeiro concurso e quer saber exatamente o que estudar, sem se perder em conteúdo.</p></div>
+      <div class="who-card rv"><h3>👩‍🏫 Professora(or) que já trabalha</h3><p>Tem pouco tempo e precisa de um estudo curto, pelo celular, que vá direto no que falta.</p></div>
+      <div class="who-card rv"><h3>🔁 Quem já fez prova e não passou</h3><p>Já estudou muito, mas continua errando nos específicos. Agora vai saber onde e por quê.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROFESSOR -->
+<section class="teacher" style="background:#fff">
+  <div class="wrap">
+    <div class="t-photo rv">[FOTO DO PROF. ROMÁRIO AQUI]<span class="stamp">NÃO ERRE MAIS!</span></div>
+    <div>
+      <span class="eyebrow">Quem criou o método</span>
+      <h2 class="rv">Prof. <span class="hl">Romário Costa</span></h2>
+      <div class="cred rv">
+        <span>🎓 Pedagogo</span><span>📘 Especialista em Ensino Híbrido</span><span>💻 Tecnologia Educacional • UFMT</span><span>👩‍🏫 Formador de professores</span>
+      </div>
+      <p class="lead rv" style="margin-top:16px">Pedagogo, especialista em Ensino Híbrido e estudante de Tecnologia Educacional pela UFMT. É formador de professores na rede municipal de Sapezal (MT) e criador do treinamento online <em>Aulas Engajadoras</em>.</p>
+      <p class="lead rv" style="margin-top:12px">Durante a pandemia, precisou se tornar um professor mais digital e viu na prática o quanto conteúdos curtos e bem pensados geram aprendizagem de verdade. O Método Não Erre Mais nasce dessa experiência: <b>microaprendizagem + tecnologia a serviço de quem vai prestar concurso.</b></p>
+      <blockquote class="quote rv">“O conhecimento é um lugar, e nós, professores, somos os guias que mostram o caminho para se chegar até ele.”<cite>— Romário Costa • @prof.romariocosta</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- OFERTA -->
+<section class="offer" id="oferta">
+  <div class="wrap center">
+    <span class="eyebrow" style="color:var(--yellow)">Comece hoje</span>
+    <h2 class="rv">Pare de errar o que <span class="hl">mais cai</span></h2>
+    <div class="card-offer rv">
+      <span class="stamp">NÃO ERRE MAIS!</span>
+      <p style="font-family:var(--f-title);font-weight:800;margin-top:10px">Método Não Erre Mais<br><span style="font-size:.85rem;color:var(--muted);font-weight:700">PEDAGOGIA • CONHECIMENTOS ESPECÍFICOS</span></p>
+      <ul>
+        <li>13 pílulas de microaprendizagem em vídeo, em 2 módulos (novos em produção)</li>
+        <li>26 pegadinhas das bancas desmontadas, com macetes para memorizar</li>
+        <li>Simulados com Inteligência Artificial que se adaptam a você</li>
+        <li>Questões de bancas reais com resposta comentada</li>
+        <li>Painel de evolução com métricas por assunto</li>
+        <li>Acesso pelo celular, pela Hotmart</li>
+      </ul>
+      <div class="price">
+        <span class="small">Tudo isso por apenas</span>
+        <span class="big"><sup>R$</sup>47</span>
+        <span class="or">ou 5x de R$ 9,40</span>
+      </div>
+      <a class="btn cta" href="#" style="margin-top:20px">Quero o Método Não Erre Mais <span class="arr">→</span></a>
+      <div class="secure">🔒 Compra 100% segura • Acesso imediato via Hotmart</div>
+    </div>
+    <div class="guarantee rv">
+      <div class="seal"><div><b>7</b><span>DIAS DE<br>GARANTIA</span></div></div>
+      <div>
+        <h3>Risco zero para você</h3>
+        <p>Entre, assista às pílulas e faça os simulados. Se em até 7 dias você achar que não é para você, é só pedir o reembolso pela Hotmart e recebe 100% do valor de volta. Sem perguntas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Dúvidas</span>
+      <h2 class="rv">Perguntas frequentes</h2>
+    </div>
+    <div class="faq">
+      <details class="rv"><summary>Como a Inteligência Artificial adapta o meu estudo?</summary><p>Depois de cada simulado, a plataforma analisa seus acertos e erros por assunto e mostra o que está dominado, em evolução ou precisa de reforço. Em seguida, monta um novo simulado com foco nos assuntos em que você mais erra.</p></details>
+      <details class="rv"><summary>As questões são de concursos reais?</summary><p>Sim. As questões são de bancas reais de concursos para professores de Pedagogia.</p></details>
+      <details class="rv"><summary>Consigo estudar pelo celular?</summary><p>Sim. As pílulas e os simulados funcionam no celular. Dá para estudar no intervalo, no ônibus ou antes de dormir.</p></details>
+      <details class="rv"><summary>Tenho pouco tempo. Vou conseguir acompanhar?</summary><p>O método foi feito para isso: cada módulo tem de 10 a 15 minutos de vídeo. Depois você já está pronta(o) para fazer o simulado.</p></details>
+      <details class="rv"><summary>Sou ruim com tecnologia. É difícil de usar?</summary><p>Não. Você entra com seu e-mail, assiste aos vídeos e clica em "Fazer simulado". A plataforma faz o resto.</p></details>
+      <details class="rv"><summary>Por quanto tempo terei acesso?</summary><p><span class="ph">[PREENCHER: tempo de acesso, ex.: 1 ano]</span></p></details>
+      <details class="rv"><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia. Se não gostar, pede o reembolso pela Hotmart e recebe todo o valor de volta.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <span class="stamp rv" style="margin-bottom:20px">NÃO ERRE MAIS!</span>
+    <h2 class="rv">Você não precisa estudar mais.<br>Precisa parar de errar o que mais cai.</h2>
+    <p class="rv" style="margin:16px auto 28px;max-width:560px;color:#E3F5EB">Comece hoje a descobrir onde você erra e treinar até acertar.</p>
+    <div class="rv"><a class="btn cta" href="#">Quero parar de errar <span class="arr">→</span></a>
+    <p class="price-note"><b>R$ 47</b> ou <b>5x de R$ 9,40</b> • Garantia de 7 dias</p></div>
+  </div>
+</section>
+
+<footer>Método Não Erre Mais • Pedagogia • Conhecimentos Específicos<br>Este produto não garante a aprovação em concursos. O resultado depende da dedicação de cada aluno.</footer>
+
+<div class="sticky" id="sticky">
+  <div class="p">R$ 47<small>ou 5x de R$ 9,40</small></div>
+  <a class="btn cta" href="#">Quero parar de errar</a>
+</div>
+
+<script>
+/* ===== TROQUE AQUI ===== */
+const CHECKOUT_URL = "#oferta";   // cole o link do checkout da Hotmart
+const VIDEO_ID = "";              // ID do vídeo no YouTube (ex.: "dQw4w9WgXcQ")
+/* ======================= */
+
+document.querySelectorAll('a.cta').forEach(a => {
+  if (a.closest('.hero')) return;           // CTA do topo rola até a oferta
+  a.href = CHECKOUT_URL;
+  if (CHECKOUT_URL.startsWith('http')) { a.target = '_blank'; a.rel = 'noopener'; }
+});
+
+if (VIDEO_ID) {
+  document.getElementById('video').innerHTML =
+    `<iframe src="https://www.youtube-nocookie.com/embed/${VIDEO_ID}" title="Tutorial Método Não Erre Mais" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>`;
+}
+
+/* reveal */
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    const sibs = [...e.target.parentElement.children].filter(c => c.classList.contains('rv'));
+    e.target.style.transitionDelay = (Math.max(0, sibs.indexOf(e.target)) * 80) + 'ms';
+    e.target.classList.add('in');
+    if (e.target.id === 'dash') {
+      e.target.classList.add('on');
+      e.target.querySelectorAll('.bar i').forEach(b => b.style.width = b.dataset.w + '%');
+    }
+    io.unobserve(e.target);
+  });
+}, { threshold: .15 });
+document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* contadores */
+const cio = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return;
+  const el = e.target, end = +el.dataset.count, t0 = performance.now(), d = reduce ? 0 : 1200;
+  const step = t => { const k = d ? Math.min(1, (t - t0) / d) : 1; el.textContent = Math.round(end * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(step); };
+  requestAnimationFrame(step); cio.unobserve(el);
+}), { threshold: .6 });
+document.querySelectorAll('[data-count]').forEach(el => cio.observe(el));
+
+/* painel do hero: mostra a IA treinando o ponto fraco */
+(function () {
+  const bar = document.getElementById('wBar'), tag = document.getElementById('wTag'), txt = document.getElementById('nextTxt');
+  if (!bar || reduce) return;
+  const states = [
+    [33, 'var(--red)', 't-red', '⚠ Reforçar', 'Próximo simulado gerado com foco em <b>Henri Wallon</b> e <b>Vygotsky</b>'],
+    [62, '#F2C200', 't-yel', 'Em evolução', '✓ Simulado focado em <b>Wallon</b> concluído: <b>+29%</b>'],
+    [100, 'var(--green)', 't-grn', '✓ Dominado', '🎉 <b>Henri Wallon dominado!</b> A IA já buscou o próximo ponto fraco']
+  ];
+  let i = 0;
+  setTimeout(function loop () {
+    i = (i + 1) % states.length;
+    const [w, c, cls, label, msg] = states[i];
+    bar.style.width = w + '%'; bar.style.background = c;
+    tag.className = 'tag ' + cls; tag.textContent = label; txt.innerHTML = msg;
+    setTimeout(loop, i === 2 ? 4200 : 3200);
+  }, 4200);
+})();
+
+/* pegadinhas: toque para revelar */
+document.querySelectorAll('.trap').forEach(t => {
+  const toggle = () => { t.classList.toggle('open'); t.setAttribute('aria-expanded', t.classList.contains('open')); };
+  t.addEventListener('click', toggle);
+  t.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
+});
+
+/* mini simulado */
+(function () {
+  const Q = [
+    { t: 'Tendências Pedagógicas', q: 'A Tendência “Renovada Progressivista” (Escola Nova) pertence a qual grupo?', o: ['Às Progressistas', 'Às Liberais', 'Às Histórico-Críticas'], c: 1, e: 'Progressiv<u>i</u>sta, com “i” no meio, é Escola Nova — é Liberal! Essa é uma das pegadinhas preferidas das bancas.' },
+    { t: 'Teorias da Aprendizagem', q: 'Para Vygotsky, qual é a relação entre aprendizagem e desenvolvimento?', o: ['O desenvolvimento vem antes e limita a aprendizagem', 'A aprendizagem puxa e impulsiona o desenvolvimento', 'Os dois não têm relação'], c: 1, e: 'Quem diz que o desenvolvimento vem antes é Piaget. Para Vygotsky, o bom ensino é aquele que se adianta ao desenvolvimento.' },
+    { t: 'Tendências Pedagógicas', q: 'Temas Geradores e diálogo caracterizam qual tendência?', o: ['Progressista Libertária', 'Liberal Não-Diretiva', 'Progressista Libertadora'], c: 2, e: 'Liber-ta-DORA é Paulo Freire, Temas Geradores e diálogo. Libertária é autogestão e assembleias.' },
+    { t: 'Teorias da Aprendizagem', q: 'Segundo Henri Wallon, afetividade e inteligência são:', o: ['Opostas: a escola deve controlar a emoção', 'Inseparáveis e se alternam no desenvolvimento', 'Independentes uma da outra'], c: 1, e: 'Em Wallon, afetividade e inteligência são inseparáveis e se alternam no comando do desenvolvimento.' },
+    { t: 'Teorias da Aprendizagem', q: 'Na teoria de David Ausubel, o “subsunçor” é:', o: ['O conhecimento prévio que ancora o novo saber', 'O conteúdo novo que o professor apresenta', 'A avaliação final do aluno'], c: 0, e: 'O subsunçor é sempre o conhecimento prévio que já estava na estrutura cognitiva do aluno, pronto para ancorar o novo saber.' }
+  ];
+  const body = document.getElementById('qBody'), count = document.getElementById('qCount'), topic = document.getElementById('qTopic'), prog = document.getElementById('qProg');
+  let i = 0, hits = {};
+  const L = 'ABC';
+  function show () {
+    const x = Q[i];
+    count.textContent = `Questão ${i + 1} de ${Q.length}`; topic.textContent = x.t; prog.style.width = (i / Q.length * 100) + '%';
+    body.innerHTML = `<p class="q-text">${x.q}</p><div class="opts">${x.o.map((o, k) => `<button class="opt" data-k="${k}"><span class="l">${L[k]}</span>${o}</button>`).join('')}</div>`;
+    body.querySelectorAll('.opt').forEach(b => b.addEventListener('click', () => answer(+b.dataset.k)));
+  }
+  function answer (k) {
+    const x = Q[i], ok = k === x.c;
+    (hits[x.t] = hits[x.t] || [0, 0])[1]++; if (ok) hits[x.t][0]++;
+    body.querySelectorAll('.opt').forEach((b, j) => { b.disabled = true; if (j === x.c) b.classList.add('ok'); else if (j === k) b.classList.add('no'); });
+    body.insertAdjacentHTML('beforeend', `<div class="fb ${ok ? 'ok' : 'no'}"><b>${ok ? '✓ Acertou!' : '✕ Caiu na pegadinha!'}</b>${x.e}</div><button class="btn q-next">${i < Q.length - 1 ? 'Próxima questão →' : 'Ver meu diagnóstico →'}</button>`);
+    body.querySelector('.q-next').addEventListener('click', () => { i++; i < Q.length ? show() : result(); });
+  }
+  function result () {
+    prog.style.width = '100%'; count.textContent = 'Seu diagnóstico'; topic.textContent = 'Análise';
+    const total = Object.values(hits).reduce((s, [a]) => s + a, 0);
+    const rows = Object.entries(hits).map(([t, [a, n]]) => {
+      const p = Math.round(a / n * 100), [cls, lab, col] = p === 100 ? ['t-grn', '✓ Dominado', 'var(--green)'] : p >= 50 ? ['t-yel', 'Em evolução', '#F2C200'] : ['t-red', '⚠ Reforçar', 'var(--red)'];
+      return `<div class="row"><span>${t}</span><div class="bar"><i style="width:${p}%;background:${col}"></i></div><span class="tag ${cls}">${lab}</span></div>`;
+    }).join('');
+    const weak = Object.entries(hits).filter(([, [a, n]]) => a < n).map(([t]) => t);
+    const msg = weak.length ? `No curso, a IA montaria agora um novo simulado com foco em <b>${weak.join(' e ')}</b> — e repetiria até você dominar.` : `Mandou bem! No curso, a IA traria questões mais difíceis e de outros temas para você continuar evoluindo.`;
+    body.innerHTML = `<div class="res"><h3>Você acertou</h3><p class="score">${total}/${Q.length}</p>${rows}<div class="ai">🤖 ${msg}</div><a class="btn cta" href="${CHECKOUT_URL}">Quero treinar até acertar →</a><button class="again">Refazer o teste</button></div>`;
+    body.querySelector('.again').addEventListener('click', () => { i = 0; hits = {}; show(); });
+  }
+  show();
+})();
+
+/* barra de progresso de leitura */
+const progress = document.getElementById('progress');
+addEventListener('scroll', () => {
+  const h = document.documentElement.scrollHeight - innerHeight;
+  progress.style.width = (h > 0 ? scrollY / h * 100 : 0) + '%';
+}, { passive: true });
+
+/* sticky CTA no celular */
+const sticky = document.getElementById('sticky');
+const offer = document.getElementById('oferta');
+addEventListener('scroll', () => {
+  const r = offer.getBoundingClientRect();
+  const inOffer = r.top < innerHeight && r.bottom > 0;
+  sticky.classList.toggle('show', scrollY > innerHeight * .8 && !inOffer);
+}, { passive: true });
+</script>
+</body>
+</html>
