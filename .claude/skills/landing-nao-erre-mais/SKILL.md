@@ -34,8 +34,8 @@ Se uma instrução nova contradiz uma regra antiga, a nova vale: atualize a regr
 | `--text` / `--muted` | `#14213D` / `#5B6478` | `#EEF1F6` / `#A3ACC0` | texto |
 | `--accent` | `#0B7C47` (verde escuro) | `#E4FF52` (neon) | texto de destaque, eyebrows, itálicos |
 | `--cta` / `--cta-text` | `#12A15E` / `#fff` | `#E4FF52` / `#0A0D05` | botões |
-| `--yellow` | `#FFE14D` | igual | marca-texto, selos de bônus/economia |
-| `--red` | `#FF5A47` | igual | erros, "Reforçar", preço riscado |
+| `--yellow` | `#FFE14D` | igual | marca-texto, selos de bônus |
+| `--red` | `#FF5A47` | igual | erros, "Reforçar" |
 | `--orange` | `#FE772B` | igual | Módulo 1 (cor das capas de Tendências) |
 | `--green` | `#22C878` | igual | Módulo 2, "Dominado" |
 
@@ -62,6 +62,8 @@ Para criar uma ilha escura, adicione a classe `dark` ao elemento: os tokens troc
 - `.tag` `.t-grn` / `.t-yel` / `.t-red` = Dominado / Em evolução / Reforçar
 - `.bonus-tag` selo amarelo com borda e sombra azul-marinho
 - `.ph` marcador amarelo tracejado para dados pendentes (`[PREENCHER]`, `[CONFIRMAR]`)
+- `.t-photo` foto real do Romário (base64 webp, recortada da capa do treinamento), `object-fit: cover`, nos cantos do card, com o selo "NÃO ERRE MAIS!" por cima
+- `.price .from`, `.price .save` e `.sticky .was` ainda existem no CSS, mas estão sem uso (não há preço riscado nem selo de economia)
 
 ### Interações (manter todas)
 
@@ -83,7 +85,7 @@ Sempre respeitar `prefers-reduced-motion` e pausar animações fora da tela.
 
 1. Barra (logo, status "IA online • simulados ativos", botão Começar)
 2. **Hero:** selo + tarja, pill mono, H1 *"Você não precisa estudar mais. Precisa parar de **errar** o que mais cai."*, subtítulo do simulado com IA, 4 checks, CTA + "Testar 5 pegadinhas grátis", preço; à direita o card escuro do fluxo da IA
-3. Números: 13 pílulas • 26 pegadinhas • 120 questões no banco • 7 dias de garantia
+3. Números: 13 pílulas • 26 pegadinhas • +500 questões no banco • 7 dias de garantia (o "+" fica fora do número embaralhado: `<b>+<span data-scr="500">`)
 4. Dor (4 cards) + frase de virada
 5. Comparação: banco de questões comum × Método Não Erre Mais
 6. Mini simulado grátis (5 questões)
@@ -95,7 +97,7 @@ Sempre respeitar `prefers-reduced-motion` e pausar animações fora da tela.
 12. Vídeo tutorial
 13. Para quem é (3 perfis)
 14. Professor (bio justificada, selos, citação, redes sociais)
-15. Oferta (card escuro, caixa de bônus, preço) + garantia
+15. Oferta (card escuro, caixa de bônus, preço R$ 97 à vista + "ou parcelado no cartão pela Hotmart", sem preço riscado e sem selo de economia) + garantia
 16. FAQ
 17. Chamada final + rodapé (redes, aviso de que não garante aprovação)
 
@@ -110,22 +112,26 @@ Sempre respeitar `prefers-reduced-motion` e pausar animações fora da tela.
 
 ### Dados do curso
 
-- **Preço:** de ~~R$ 147~~ por **R$ 47 à vista** ou **5x de R$ 9,40**. Garantia de 7 dias. Venda pela Hotmart.
+- **Preço:** **R$ 97 à vista** ou parcelado no cartão pela Hotmart. **Sem preço riscado** (R$ 147 nunca foi cobrado). Número de parcelas e juros seguem a Hotmart: a página não mostra valor de parcela, número de parcelas nem "sem juros". Garantia de 7 dias. Venda pela Hotmart.
+- **Acesso:** 1 ano, a partir da compra, pelo app ou site da Hotmart.
+- **Próximos módulos:** quem entra agora recebe sem custo extra (confirmado). Apostilas dos próximos módulos sem custo extra ainda **não** confirmado.
 - **Módulo 01 — Tendências Pedagógicas** (8 eps, ~12 min): Mapa Geral Liberais × Progressistas; Liberal Tradicional; Renovada Progressivista (Escola Nova); Renovada Não-Diretiva (Carl Rogers); Liberal Tecnicista (Skinner); Progressista Libertadora (Paulo Freire); Progressista Libertária; Crítico-Social e Histórico-Crítica (Saviani).
 - **Módulo 02 — Teorias da Aprendizagem** (5 eps, ~10 min): Piaget; Vygotsky; Wallon; Ausubel; Ciclos de Vida Humana.
 - **Em produção:** Avaliação da Aprendizagem; Currículo e Didática.
-- **Simulado:** 10 questões sorteadas do banco do módulo (70 em Tendências, 50 em Teorias), com explicação em cada uma; o sorteio prioriza as que o aluno não viu; painel com meta de 70%.
+- **Simulado:** banco com **+500 questões** (sem quantitativo por tema por enquanto); 10 questões sorteadas do banco do módulo, com explicação em cada uma; o sorteio prioriza as que o aluno não viu; painel com meta de 70%.
 - **Bônus:** apostila de aprofundamento em PDF do Módulo 1 (20 páginas, 8 capítulos, 16 questões comentadas, pegadinhas, curiosidades, quadro comparativo, linha do tempo). Base: Libâneo, Saviani, Paulo Freire, Carl Rogers.
 - **Professor:** Romário Costa — professor pedagogo; pós-graduado em Ensino Híbrido; graduado em Tecnologia Educacional (UFMT); formador de professores (rede municipal de Sapezal, MT); especialista em IA na personalização do ensino e da aprendizagem; criador do treinamento *Aulas Engajadoras*; músico, compositor, guitarrista, produtor audiovisual e musical. Citação: "O conhecimento é um lugar, e nós, professores, somos os guias que mostram o caminho para se chegar até ele."
 - **Redes:** Instagram e TikTok @prof.romariocosta; YouTube @engajadamente. Só na seção do professor e no rodapé (nunca perto dos CTAs).
 
 ### Pendências (atualizar quando o usuário enviar)
 
-- [ ] Foto do Romário (`[FOTO DO PROF. ROMÁRIO AQUI]`)
+- [x] Foto do Romário (recortada da capa do treinamento)
 - [ ] `CHECKOUT_URL` da Hotmart (fim do `<script>`)
 - [ ] `VIDEO_ID` do vídeo tutorial no YouTube
-- [ ] Tempo de acesso (FAQ)
-- [ ] Confirmar: R$ 147 é preço real; 5x sem juros; módulos e apostilas futuros sem custo extra; banco de 120 questões
+- [x] Tempo de acesso (FAQ): 1 ano
+- [ ] Confirmar: apostilas dos próximos módulos sem custo extra (`[CONFIRMAR]` na seção da apostila)
+- [ ] Lista dos 7 temas + 2 bônus (capa do treinamento) para reorganizar a seção de módulos
+- [ ] Quantitativo de questões por tema
 
 ## Fluxo de trabalho técnico
 
@@ -161,3 +167,9 @@ Definidos em `.claude/agents/` e orquestrados pela sessão principal (regras no 
 | 2026-11-18 | Preço: de R$ 147 por R$ 47 à vista ou 5x de R$ 9,40, com selo "você economiza R$ 100" |
 | 2026-11-19 | Texto da bio do professor **justificado**, com hifenização automática em português |
 | 2026-11-23 | Trabalho dividido em 4 subagentes especialistas dentro da sessão principal (opção 1), em vez de sessões separadas |
+| 2026-11-23 | Preço passa a R$ 97 à vista: o Romário, em áudio, disse que o curso ficou mais profundo, com apostila e simulado, e por isso sai de R$ 47 para R$ 97 |
+| 2026-11-23 | Preço riscado de R$ 147 e selo "você economiza R$ 100" removidos: os R$ 147 nunca foram cobrados |
+| 2026-11-23 | Parcelamento e juros pela Hotmart: a página diz só "ou parcelado no cartão pela Hotmart", sem valor nem número de parcelas e sem "sem juros" |
+| 2026-11-23 | Banco do simulado: +500 questões (sem quantidade por tema); stat dos números com "+" fora do embaralhador |
+| 2026-11-23 | Acesso de 1 ano (FAQ); próximos módulos sem custo extra confirmado (tirado o `[CONFIRMAR]` dos módulos; o da apostila fica) |
+| 2026-11-23 | Foto real do Romário, recortada da capa do treinamento, na seção do professor (`.t-photo`) |
