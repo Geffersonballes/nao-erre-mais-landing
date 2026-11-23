@@ -11,6 +11,7 @@ index.html                  → a landing page (arquivo único: HTML + CSS + JS)
 versoes-anteriores/         → versões antigas, só para consulta
 CLAUDE.md                   → instrução para o Claude seguir a skill
 .claude/skills/             → skill com a identidade visual, regras e decisões da landing
+.claude/agents/             → subagentes: copywriter, designer, conteúdo do curso e QA/publicação
 ```
 
 A página não depende de build nem de framework. Basta abrir o `index.html` no navegador.

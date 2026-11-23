@@ -141,6 +141,11 @@ Sempre respeitar `prefers-reduced-motion` e pausar animações fora da tela.
 - DNS na Hostinger (`ballestech.com.br`): `CNAME naoerremais → geffersonballes.github.io`. **Nunca alterar** os registros de e-mail (MX, SPF, DKIM, autodiscover/autoconfig) nem os de verificação do Google.
 - Quando comprarem o domínio do curso: trocar o `CNAME`, criar o registro no DNS novo e atualizar em *Settings → Pages*.
 
+## Equipe de subagentes
+
+Definidos em `.claude/agents/` e orquestrados pela sessão principal (regras no `CLAUDE.md`):
+`copywriter-nao-erre-mais` (textos), `designer-interacoes` (visual e interações), `conteudo-curso` (leitura de materiais) e `qa-publicacao` (testes e publicação). Todos seguem esta skill; copywriter e designer a atualizam ao terminar.
+
 ## Registro de decisões
 
 | Data | Decisão |
@@ -155,3 +160,4 @@ Sempre respeitar `prefers-reduced-motion` e pausar animações fora da tela.
 | 2026-11-18 | Redes sociais só na seção do professor e no rodapé; link do TikTok sem parâmetros de rastreamento |
 | 2026-11-18 | Preço: de R$ 147 por R$ 47 à vista ou 5x de R$ 9,40, com selo "você economiza R$ 100" |
 | 2026-11-19 | Texto da bio do professor **justificado**, com hifenização automática em português |
+| 2026-11-23 | Trabalho dividido em 4 subagentes especialistas dentro da sessão principal (opção 1), em vez de sessões separadas |
